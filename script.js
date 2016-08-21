@@ -1,5 +1,5 @@
 var dictionary = {
-	plain: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,?!;:\'"{}[]\\/<>$%^&*()',
+	plain: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,?!;:\'"{}[]\\/<>$%^&*()0123456789',
 	amazing: [
 		'65345',
 		'65346',
@@ -75,7 +75,17 @@ var dictionary = {
 		'65286',
 		'65290',
 		'65288',
-		'65289'
+		'65289',
+		'65296',
+		'65297',
+		'65298',
+		'65299',
+		'65300',
+		'65301',
+		'65302',
+		'65303',
+		'65304',
+		'65305'
 	]
 }
 
