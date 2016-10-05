@@ -98,11 +98,15 @@ $(document).ready(function(){
 			for (var i = 0; i < len; i++) {
 				var char = str[i];
 				if (char != ' ') {
-					var newchar = dictionary.amazing[dictionary.plain.indexOf(char)];
-					if (newchar != 'quot')
-						newstr += '&#' + newchar + ';';
-					else
-						newstr += '&quot';
+					var index = dictionary.plain.indexOf(char);
+					if (index != -1) {
+						var newchar = dictionary.amazing[index];
+						if (newchar != 'quot')
+							newstr += '&#' + newchar + ';';
+						else
+							newstr += '&quot';
+					} else
+						newstr += char;
 				} else
 					newstr += ' ';
 			}

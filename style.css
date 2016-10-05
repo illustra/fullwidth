@@ -4,7 +4,10 @@ html {
     width: 100%;
     height: 100%
 }
-
+@media screen and (max-width: 768px) {
+	#app { width: 450px !important }
+	input { width: 80% !important }
+}
 @media screen and (max-width: 480px) {
 	.half { margin: 0 auto !important }
 	body { display: block !important }
@@ -14,7 +17,6 @@ html {
 	}
 	input, p { font-size: 1.2em !important }
 	input {
-		width: inherit !important;
 		padding: 1em !important;
 	}
 	.logo { opacity: 0.35 }
@@ -31,12 +33,11 @@ html {
 body {
     background: #fafafa;
     display: flex;
-    align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 body #app {
-    width: 500px
+    width: 700px
 }
 
 body #app .half {
@@ -55,7 +56,7 @@ body #app .half input {
     padding: 1.5em;
     background: 0 0;
     outline: 0;
-    width: 400px;
+    width: 600px;
     border: none;
     border-bottom: 1px solid #000
 }
